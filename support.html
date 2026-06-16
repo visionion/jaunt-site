@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#E55B13" />
+<title>Jaunt — Support</title>
+  <meta name="description" content="Jaunt — Support. Part of Visionion — thoughtful, privacy-first software." /><link rel="canonical" href="https://jaunt.visionion.dev/support.html" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" /></head>
+<body>
+<nav class="nav"><div class="nav-container">
+<a href="/" class="nav-logo"><span class="logo-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 16 L20 6 L13.5 16.5 L11 14 L8 17 L5.5 15.5 Z"/></svg></span><span class="logo-text">Jaunt</span></a>
+<div class="nav-right"><a href="/" class="nav-link">Home</a><a href="/support.html" class="nav-link">Support</a></div></div></nav>
+<main><div class="main-content" style="max-width:760px;margin:0 auto;padding:3rem 1.5rem">
+<h1 style="font-size:2rem;margin-bottom:1.5rem">Support</h1>
+<div style="line-height:1.8;opacity:.9">
+<p>Need help with Jaunt? Here are the most common questions.</p>
+
+<h2>Contact</h2>
+<p>Email <a href="mailto:info@visionion.dev?subject=Jaunt%20Support">info@visionion.dev</a> — we reply within 1–2 business days.</p>
+
+<h2>Pricing</h2>
+<p>Jaunt is a one-time <strong>$9.99 purchase</strong> via the App Store, with a 7-day free trial. It's Family Shareable — one purchase covers up to 5 family members. Trip members you invite into a shared trip do <strong>not</strong> need to buy Jaunt themselves to join; they ride along on whoever created the trip.</p>
+
+<h2>How does sharing work?</h2>
+<p>Open the trip → menu → <strong>Share trip</strong>. The system Share Sheet appears. AirDrop or send the invite via Messages to anyone on iPhone with Jaunt installed. They open the link, accept the share, and the trip appears on their phone with full read/write access. Sync happens through iCloud — Visionion has no servers.</p>
+
+<h2>The "Share trip" button says iCloud is unavailable</h2>
+<p>Three reasons that can happen:</p>
+<ol>
+  <li>You're not signed into iCloud. Open Settings → Apple ID and sign in.</li>
+  <li>Your iCloud quota is full. Free up some space or upgrade.</li>
+  <li>You're on a development/TestFlight build that hasn't yet had its iCloud container provisioned. Try the App Store version.</li>
+</ol>
+
+<h2>How do I reorder itinerary items?</h2>
+<p>Long-press any leg row and start dragging. Reorder within a day works freely; moving across days requires changing the leg's date in the editor.</p>
+
+<h2>Receipt scanning didn't pick up my total</h2>
+<p>VisionKit gets the vendor and total right for ~85% of US/EU receipts in our testing. If it doesn't, the scanner still captures the receipt image — just tap "Title" and "Amount" to type them in. We'd love a copy of the receipt that didn't work so we can improve: email it to info@visionion.dev (anonymise anything sensitive first).</p>
+
+<h2>Where is my trip data stored?</h2>
+<p>In <code>SwiftData</code> + your iCloud private database. Visionion has no servers and no copy.</p>
+
+<h2>I'd like a feature</h2>
+<p>Send it to <a href="mailto:info@visionion.dev?subject=Jaunt%20feature%20idea">info@visionion.dev</a>. We read every suggestion and reply.</p>
+
+<h2>Refunds</h2>
+<p>Refund requests for the App Store purchase go through Apple's <a href="https://reportaproblem.apple.com">Report a Problem</a> page.</p>
+</div></div></main>
+<footer class="footer"><div class="footer-container">
+<p class="footer-copy">© <span id="year"></span> Visionion. All rights reserved.</p>
+<div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/support.html">Support</a><a href="https://visionion.dev/contact-us.html">Contact</a></div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_CF_TOKEN"}'></script>
+</body></html>
